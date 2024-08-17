@@ -8,6 +8,35 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const name = document.querySelector('input[type="text"][placeholder="Full Name"]').value;
+        const from = document.querySelector('input[type="email"][placeholder="Email Address"]').value;
+        const phone = document.querySelector('input[type="number"][placeholder="Mobile Number"]').value;
+        const subject = document.querySelector('input[type="text"][placeholder="Email Subject"]').value;
+        const message = document.querySelector('textarea[placeholder="Your Message"]').value;
+        
+        const to = 'vadasairaju123@gmail.com';
+        const body = `Hi Sai raj,\n\n${message}\n\nBest Regards,\n${name}\nPhone: ${phone}`;
+        
+        const mailtoLink = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        
+        // Attempt to open mailto link
+        window.location.href = mailtoLink;
+        
+        // Show success message
+        const successMessage = document.getElementById('success-message');
+        if (successMessage) {
+            successMessage.style.display = 'block';
+            successMessage.style.animation = 'fadeIn 0.5s forwards';
+        }
+    });
+});
+
+
+
 // scroll section active link
 let sections = document.querySelectorAll('section');
 let navLinks= document.querySelectorAll('header nav a');
