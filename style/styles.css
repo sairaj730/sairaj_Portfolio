@@ -211,6 +211,12 @@ span {
     margin-bottom: 5rem;
 }
 
+.Skills-explanation {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
 
 .Skills-container {
     display: flex;
