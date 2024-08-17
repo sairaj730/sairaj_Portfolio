@@ -6,6 +6,7 @@
 
     <!-- font style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
     
     
     <link rel="stylesheet" href="style/styles.css">
@@ -14,16 +15,16 @@
 <body>
     <!-- header design -->
     <header class="header">
-        <a href="#" class="logo">MY Portfolio</a>
+        <a href="#" class="logo">MY <span class="Logo-hover">Portfolio</span></a>
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
-        <a href="#about" class="Anchor-hover">About</a>
-        <a href="#Skills" class="Anchor-hover">Skills</a>
-        <a href="#Projects" class="Anchor-hover">Projects</a>
-        <a href="#Education" class="Anchor-hover">Education</a>
-        <a href="#contact" class="Anchor-hover">Contact</a>
+        <a href="#about"><span class="Anchor-hover">About</span></a>
+        <a href="#Skills"><span class="Anchor-hover">Skills</span></a>
+        <a href="#Projects"><span class="Anchor-hover">Projects</span></a>
+        <a href="#Education"><span class="Anchor-hover">Education</span></a>
+        <a href="#contact"><span class="Anchor-hover">Contact</span></a>
         </nav>
     </header>
 
@@ -227,7 +228,7 @@
         <section class="contact" id="contact">
             <h2 class="heading">Contact <span>Me</span></h2>
 
-            <form action="#">
+            <form id="contact-form" enctype="multipart/form-data">
                 <div class="input-box">
                     <input type="text" placeholder="Full Name">
                     <input type="email" placeholder="Email Address">
