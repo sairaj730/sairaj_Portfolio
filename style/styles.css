@@ -49,7 +49,7 @@ section{
 
 .Anchor-hover {
     font-size: 1.6rem;
-    color: var(--main-color);
+    color: var(--text-color);
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
     display: inline-block;
 }
@@ -63,6 +63,20 @@ section{
     color: var(--text-color);
     font-weight: 700;
     cursor: default;
+}
+
+.Logo-hover {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 700;
+    cursor: default;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.Logo-hover:hover {
+    transform: scale(1.1);
+    color: var(--main-color);
 }
 
 .navbar a {
